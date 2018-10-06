@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#backButtonOnAction" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="baymax2.SignupController">
+   <children>
+      <Label layoutX="191.0" layoutY="34.0" text="Sign Up!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="111.0" text="First Name: " />
+      <TextField fx:id="t1" layoutX="130.0" layoutY="107.0" />
+      <Label layoutX="58.0" layoutY="148.0" text="Last Name: " />
+      <TextField fx:id="t2" layoutX="130.0" layoutY="144.0" />
+      <TextField fx:id="t2" layoutX="130.0" layoutY="180.0" />
+      <Label layoutX="60.0" layoutY="184.0" text="Mobile No:" />
+      <Label layoutX="61.0" layoutY="225.0" text="Birth Date:" />
+      <ComboBox fx:id="comboDate" editable="true" layoutX="130.0" layoutY="221.0" prefHeight="25.0" prefWidth="75.0" promptText="Date" />
+      <ComboBox fx:id="comboMonth" editable="true" layoutX="202.0" layoutY="221.0" prefHeight="25.0" prefWidth="75.0" promptText="Month" />
+      <ComboBox fx:id="comboYear" editable="true" layoutX="279.0" layoutY="221.0" prefHeight="25.0" prefWidth="75.0" promptText="Year" />
+      <Label layoutX="78.0" layoutY="309.0" text="Height:" />
+      <TextField fx:id="t3" layoutX="130.0" layoutY="305.0" prefHeight="25.0" prefWidth="63.0" promptText="in cm" />
+      <Label layoutX="205.0" layoutY="309.0" text="Weight:" />
+      <TextField fx:id="t4" layoutX="257.0" layoutY="305.0" prefHeight="25.0" prefWidth="63.0" promptText="in kg" />
+      <Label layoutX="75.0" layoutY="268.0" text="Sex:" />
+      <ComboBox fx:id="comboSex" layoutX="130.0" layoutY="264.0" prefWidth="150.0" />
+      <Button fx:id="signUpbutton" layoutX="471.0" layoutY="342.0" mnemonicParsing="false" onAction="#signUpButtonOnAction" text="Sign Up" />
+      <Button fx:id="backButton" layoutX="32.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>
